@@ -1,0 +1,44 @@
+1. 创建git仓库
+1.a) clone命令
+1.b) 本地创建git仓库,然后push到远程服务器
+git init
+1.c) 在远程服务器创建git仓库,然后clone到本地
+
+git clone https://xxx.git
+git clone git@xxxx.git
+
+2. 提交代码到本地仓库
+git add .
+git commit -m "put 注释 here."
+
+3. 拉取远程代码 -> 合并有冲突的代码 -> 提交代码到远程仓库
+pull
+Conflict: merge ---> new commit
+Push
+
+git status(git st)
+git log --graph
+
+==============================
+下午:
+
+git config --global user.email "zhangwei@evergrande.cn"
+
+git config --global user.name "张伟"
+
+git config --global --list
+
+git验证机制
+https用户名+密码
+ssh公钥私钥配对
+ssh-keygen -t rsa -C "victorypiter@msn.com"
+
+4. 切换分支
+git branch
+git branch --remote
+
+git checkout -b new_branch
+
+git checkout new_branch
+
+git branch --set-upstream-to=origin/master new_branch
